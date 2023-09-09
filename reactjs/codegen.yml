@@ -1,0 +1,7 @@
+schema: https://countries.trevorblades.com/graphql
+generates:
+  type/graphql.d.ts:
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typed-document-node'
