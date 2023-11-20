@@ -1,0 +1,23 @@
+/* variable */
+/* nesting */
+/* partial -> import */
+/* mixins */
+/* extend */
+/* pseudo selector */
+/* operators */
+@mixin transform_me($prop1, $prop2)
+{
+    width:$prop1;
+    height:$prop2;
+    border-color: red;
+}
+%extend-border{
+    border-color:yellow
+}
+$primary-color:tomato;
+.sass{
+    @include transform_me(80px,50px);
+    border-width: 1px;
+    border-style: solid;
+    @extend %extend-border
+}
